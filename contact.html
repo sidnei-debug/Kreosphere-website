@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Start a Project | Kreosphere</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" type="image/png" href="assets/Logomark.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="contact-page">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="#" class="logo">
+        <img
+          src="assets/IT project- Kreosphere build logo white.png"
+          alt="Kreosphere"
+        />
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="index.html#services">SERVICES</a>
+        <a href="index.html#work">WORK</a>
+        <a href="index.html#about">ABOUT</a>
+        <a href="contact.html" class="active">CONTACT</a>
+      </nav>
+
+      <a href="contact.html" class="nav-button"> Start a Project </a>
+    </header>
+
+    <!-- CONTACT HERO -->
+    <main>
+      <section class="contact-hero">
+        <div class="contact-intro">
+          <p class="contact-label">START A PROJECT</p>
+
+          <h1>
+            Let's build something
+            <span>meaningful.</span>
+          </h1>
+
+          <p class="contact-description">
+            Have a project, idea or brand that needs the right creative and
+            technical expertise? Tell us what you're working on and let's
+            explore how Kreosphere can help.
+          </p>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrapper">
+          <form id="projectForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company / Brand</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company or brand name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+234..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">What do you need? *</label>
+
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+
+                <option value="Branding">Branding & Identity</option>
+
+                <option value="Graphic Design">Graphic Design</option>
+
+                <option value="Social Media">Social Media Management</option>
+
+                <option value="Photography">Photography</option>
+
+                <option value="Videography">Videography</option>
+
+                <option value="Digital Marketing">Digital Marketing</option>
+
+                <option value="Web Development">Web Development</option>
+
+                <option value="Creative Tech">Creative Technology</option>
+
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Estimated Budget</label>
+
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range</option>
+
+                <option value="Under ₦100,000">Under ₦100,000</option>
+
+                <option value="₦100,000 - ₦250,000">₦100,000 - ₦250,000</option>
+
+                <option value="₦250,000 - ₦500,000">₦250,000 - ₦500,000</option>
+
+                <option value="₦500,000 - ₦1,000,000">
+                  ₦500,000 - ₦1,000,000
+                </option>
+
+                <option value="₦1,000,000+">₦1,000,000+</option>
+
+                <option value="Not sure yet">I'm not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Project Timeline</label>
+
+              <select id="timeline" name="timeline">
+                <option value="" disabled selected>When do you need it?</option>
+
+                <option value="As soon as possible">As soon as possible</option>
+
+                <option value="Within 2 weeks">Within 2 weeks</option>
+
+                <option value="Within 1 month">Within 1 month</option>
+
+                <option value="1 - 3 months">1 - 3 months</option>
+
+                <option value="Flexible">I'm flexible</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Tell us about your project * </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us what you're trying to achieve, what you need, and anything else we should know..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="source"> How did you hear about us? </label>
+
+              <select id="source" name="source">
+                <option value="" disabled selected>Select an option</option>
+
+                <option value="Instagram">Instagram</option>
+
+                <option value="Facebook">Facebook</option>
+
+                <option value="LinkedIn">LinkedIn</option>
+
+                <option value="TikTok">TikTok</option>
+
+                <option value="Referral">Referral</option>
+
+                <option value="Google">Google</option>
+
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Send Project Inquiry
+              <span>→</span>
+            </button>
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+
+          <div id="successMessage" class="success-message">
+            <div class="success-icon">✓</div>
+
+            <h2>Inquiry received.</h2>
+
+            <p>
+              Thank you for reaching out to Kreosphere. We've received your
+              project details and will get back to you shortly.
+            </p>
+
+            <a href="index.html"> Back to Home </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div>
+        <p>© 2026 Kreosphere. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
