@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Kreosphere Admin Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/kreosphere-favicon.png"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="admin-page">
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-brand">
+
+            <img
+                src="assets/kreosphere-logo-white.png"
+                alt="Kreosphere"
+            >
+
+            <span>
+                ADMIN
+            </span>
+
+        </div>
+
+
+        <nav class="admin-nav">
+
+            <a
+                href="#"
+                class="admin-nav-item active"
+            >
+                <span>▦</span>
+                Dashboard
+            </a>
+
+
+            <a
+                href="#"
+                class="admin-nav-item"
+            >
+                <span>✉</span>
+                Inquiries
+
+                <span class="nav-count">
+                    0
+                </span>
+            </a>
+
+
+            <a
+                href="#"
+                class="admin-nav-item"
+            >
+                <span>◫</span>
+                Projects
+            </a>
+
+
+            <a
+                href="#"
+                class="admin-nav-item"
+            >
+                <span>◈</span>
+                Services
+            </a>
+
+
+            <button
+                id="logoutButton"
+                class="btn btn-secondary"
+                type="button"
+            >
+                Logout
+            </button>
+
+        </nav>
+
+
+        <div class="admin-sidebar-bottom">
+
+            <a
+                href="index.html"
+                class="view-site"
+            >
+                View Website →
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="admin-main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="admin-topbar">
+
+            <div>
+
+                <p class="admin-small-label">
+                    KREOSPHERE
+                </p>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="admin-user">
+
+                <div class="admin-avatar">
+                    K
+                </div>
+
+                <div>
+
+                    <strong>
+                        Admin
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             STATISTICS
+        ====================================== -->
+
+        <section class="dashboard-stats">
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    Total Inquiries
+                </span>
+
+                <strong class="stat-number">
+                    0
+                </strong>
+
+                <span class="stat-note">
+                    All time
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    New Inquiries
+                </span>
+
+                <strong class="stat-number">
+                    0
+                </strong>
+
+                <span class="stat-note">
+                    Awaiting response
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    Active Projects
+                </span>
+
+                <strong class="stat-number">
+                    0
+                </strong>
+
+                <span class="stat-note">
+                    Currently active
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    Completed
+                </span>
+
+                <strong class="stat-number">
+                    0
+                </strong>
+
+                <span class="stat-note">
+                    Projects completed
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             RECENT INQUIRIES
+        ====================================== -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-heading">
+
+                <div>
+
+                    <span>
+                        PROJECT INQUIRIES
+                    </span>
+
+                    <h2>
+                        Recent inquiries
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="view-all-btn"
+                    type="button"
+                >
+                    View all →
+                </button>
+
+            </div>
+
+
+            <div class="inquiries-table">
+
+                <div class="table-header">
+
+                    <span>
+                        CLIENT
+                    </span>
+
+                    <span>
+                        SERVICE
+                    </span>
+
+                    <span>
+                        DATE
+                    </span>
+
+                    <span>
+                        STATUS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             QUICK ACTIONS
+        ====================================== -->
+
+        <section class="quick-actions">
+
+            <div>
+
+                <span>
+                    QUICK ACTIONS
+                </span>
+
+                <h2>
+                    Manage Kreosphere
+                </h2>
+
+            </div>
+
+
+            <div class="action-buttons">
+
+                <button type="button">
+                    + Add Project
+                </button>
+
+                <button type="button">
+                    + Add Service
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
